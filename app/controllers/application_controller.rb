@@ -37,7 +37,6 @@ class ApplicationController < Sinatra::Base
     puts "TEEEEEEEEST"
     puts recipe
     recipe.update(:name => params[:name], :ingredients => params[:ingredients], :cook_time => params[:cook_time])
-    recipe.save
     redirect "/recipes/#{recipe.id}"
   end
 
