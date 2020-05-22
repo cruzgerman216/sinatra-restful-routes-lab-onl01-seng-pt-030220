@@ -1,4 +1,4 @@
 #Placeholder for a model
-class Recipe < Active:Record::Base
+class Recipe < ActiveRecord::Base
 
 end
