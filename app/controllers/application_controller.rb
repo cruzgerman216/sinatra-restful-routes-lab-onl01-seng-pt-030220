@@ -16,6 +16,6 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/recipes/:id/edit' do
-    
+
   end
 end
