@@ -3,6 +3,11 @@
 <p><%=@recipe.cook_time%></p>
 
 
-<form action="/patch/<%=@recipe.id%>" method="patch">
-  <input type="submit" name="/patch/<%=@recipe.id%>">
+
+<form action="/patch/<%=@recipe.id%>" method="post">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <input type="text" name="name">
+  <input type="text" name="ingredients">
+  <input type="text" name="cook_time">
+  <input type="submit" value="submit">
 </form>
