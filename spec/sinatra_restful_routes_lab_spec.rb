@@ -94,9 +94,6 @@ describe "Recipe App" do
       visit "/recipes/new"
     end
 
-    it 'responds with a 200 status code' do
-      expect(page.status_code).to eq(200)
-    end
 
     it "contains a form to create the recipe" do
       expect(page.body).to include("</form>")
