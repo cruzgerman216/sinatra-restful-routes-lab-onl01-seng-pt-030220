@@ -17,5 +17,6 @@ class ApplicationController < Sinatra::Base
 
   patch '/recipes/:id/edit' do
 
+  erb :edit
   end
 end
